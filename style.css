@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F8C8DC;
+}
+
+.header_text {
+    font-family: 'Nunito';
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.gif_container {
+    display: flex;
+    height: 500px;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Keyframes for the animation */
+/* Define your keyframes */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        /* Start invisible */
+    }
+
+    100% {
+        opacity: 1;
+        /* Fade in */
+    }
+}
+
+/* Apply the animation to the lyrics container */
+.lyrics {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    width: 70%;
+    overflow: hidden;
+    /* Hide overflowing text */
+}
+
+
+/* Apply the animation to .line elements */
+.line {
+    margin: 10px 0;
+    font-size: 24px;
+    font-style: italic;
+    opacity: 0;
+    /* Start invisible */
+    animation: fadeIn 1s forwards;
+    /* Apply fadeIn animation to each line */
+}
+
+/* Apply animation delays to each line */
+.line:nth-child(1) {
+    animation-delay: 0s;
+    /* Delay for the first line */
+    color: rgb(0, 0, 0);
+}
+
+.line:nth-child(2) {
+    animation-delay: 2s;
+    /* Delay for the second line */
+    color: rgb(0, 0, 0);
+}
+
+.line:nth-child(3) {
+    animation-delay: 4s;
+    /* Delay for the third line */
+    color: rgb(0, 0, 0);
+}
+
+.line:nth-child(4) {
+    animation-delay: 6.5s;
+    /* Delay for the fourth line */
+    color: rgb(0, 0, 0);
+}
